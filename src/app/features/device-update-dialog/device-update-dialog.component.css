@@ -1,0 +1,25 @@
+/* Center the buttons horizontally */
+.centered-actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style for the "Cancel" button */
+  .cancel-button {
+    background-color: #e2e2e2; /* Red color, change to your preference */
+    color: rgb(0, 0, 0); /* White text, change to your preference */
+    margin-right: 10px;
+  }
+  
+  /* Style for the "Create Device" button */
+  .update-button {
+    background-color: #450035; /* Blue color, change to your preference */
+    color: #fff; /* White text, change to your preference */
+  }
+  
+  /* Hover effect for buttons (optional) */
+  .cancel-button:hover,
+  .update-button:hover {
+    opacity: 0.8;
+  }
+  

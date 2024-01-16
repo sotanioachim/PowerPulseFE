@@ -1,0 +1,6 @@
+<div class="user-list-container">
+  <h2 class="list-title">Manage users:</h2>
+  <div class="user-list">
+    <app-app-user-card *ngFor="let user of users" [user]="user" (deleteUser)="deleteUser($event)"></app-app-user-card>
+  </div>
+</div>

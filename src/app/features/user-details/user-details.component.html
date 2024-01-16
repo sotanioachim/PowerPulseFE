@@ -1,0 +1,34 @@
+<!-- user-details.component.html -->
+
+<div *ngIf="user">
+    <div class="user-details-container">
+        <!-- User Details Section -->
+        <div class="user-details-section">
+            <h2>User Details</h2>
+            <p><strong>Username:</strong> {{ user.username }}</p>
+            <p><strong>First Name:</strong> {{ user.firstName }}</p>
+            <p><strong>Last Name:</strong> {{ user.lastName }}</p>
+            <p><strong>Date of Birth:</strong> {{ user.dateOfBirth | date }}</p>
+            <p><strong>Email:</strong> {{ user.email }}</p>
+            <!-- Add more user details as needed -->
+
+            <button class="edit-user-button" (click)="openUserUpdateDialog(user.userId)">Edit User</button>
+        </div>
+
+        <!-- Devices Section -->
+        <h2>{{ user.firstName }}'s devices</h2>
+        <div class="devices-section">
+            
+            <div *ngFor="let device of devices">
+                <app-minimal-device-card [device]="device" (deleteDevice)="deleteDevice($event)"></app-minimal-device-card>
+            </div>
+
+            <button class="add-device-button" (click)="openDeviceCreateDialog()">Add Device</button>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="!user">
+<p>Loading...</p>
+</div>
+  

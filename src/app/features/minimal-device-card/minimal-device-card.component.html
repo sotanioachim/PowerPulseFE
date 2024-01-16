@@ -1,0 +1,11 @@
+<!-- device-card.component.html -->
+<mat-card>
+    <img mat-card-image src="assets/images/device.png" alt="{{device.name}}">
+    <mat-card-content>
+      <h3>{{device.name}}</h3>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="deleteDevice.emit(device.deviceId)">Remove Device</button>
+    </mat-card-actions>
+  </mat-card>
+  

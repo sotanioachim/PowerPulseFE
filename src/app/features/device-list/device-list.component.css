@@ -1,0 +1,47 @@
+/* device-list.component.css */
+
+.device-list-container {
+  text-align: center;
+}
+
+.list-title {
+  font-size: 1.5rem;
+  margin: 16px 0px;
+}
+
+.device-list {
+  display: flex;
+  justify-content: left; /* Add space between the cards */
+  flex-wrap: wrap;
+}
+
+app-device-card {
+  display: inline-block;
+  width: calc(30% - 16px); /* Adjust the percentage based on your design */
+  margin: 8px; /* Adjust the spacing between cards */
+}
+
+.button-container {
+  margin-top: 16px; /* Adjust the margin based on your design */
+}
+
+.add-device-button {
+  background-color: azure;
+  border-color: rgb(208, 255, 255);
+  color: black;
+}
+
+.add-content{
+  display: flex;
+  align-items: center;
+}
+
+.add-device-button:hover {
+  background-color: rgb(198, 243, 243);
+  color: black; /* Change the color when hovering based on your preference */
+}
+
+.add-device-button mat-icon {
+  scale: 1;
+  margin-right: 2px; /* Adjust the margin between the icon and label */
+}

@@ -1,0 +1,26 @@
+/* device-card.component.css */
+
+mat-card {
+    width: 300px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: azure;
+  }
+  
+  mat-card img {
+    border-radius: 25%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  mat-card-content {
+    padding: 16px;
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+  }
+  

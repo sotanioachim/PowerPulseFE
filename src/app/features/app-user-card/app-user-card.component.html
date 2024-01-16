@@ -1,0 +1,17 @@
+<!-- user-card.component.html -->
+
+<mat-card>
+    <img mat-card-image src="assets/images/device.png" alt="{{user?.firstName}}">
+    <mat-card-content>
+        <h3>{{ user?.firstName }} {{ user?.lastName }}</h3>
+        <p>{{ user?.role }}</p>
+    </mat-card-content>
+  
+    <mat-card-actions>
+      <div class="action-buttons">
+        <button mat-button color="primary" routerLink="/user-details/{{ user?.userId }}">Details</button>
+        <button mat-button color="primary" (click)="deleteUser.emit(user?.userId)">Delete</button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+  

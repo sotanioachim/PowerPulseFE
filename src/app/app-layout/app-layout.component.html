@@ -1,0 +1,23 @@
+<div class="navbar">
+    <div class="">
+      <div class="logo">
+        <img src="assets/images/logo.jpeg" alt="Logo">
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button mat-button [matMenuTriggerFor]="menu">
+        <div class="profile-button">
+            {{ userName }}
+            <mat-icon>account_circle</mat-icon>
+        </div>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="goToProfile()">Profile</button>
+        <button mat-menu-item (click)="goToDevices()">Devices</button>
+        <button mat-menu-item (click)="goToMeasurements()">Measurements</button>
+        <button mat-menu-item (click)="goToChat()">Chat</button>
+        <button mat-menu-item (click)="logout()">Logout</button>
+      </mat-menu>
+    </div>
+  </div>

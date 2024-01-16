@@ -1,0 +1,18 @@
+<div id="chat-page">
+    <div class="chat-container">
+      <div class="chat-header">
+        <h2>Admin Chat</h2>
+      </div>
+      <ul id="messageArea">
+        <li *ngFor="let message of messages">{{message.sender}} : {{ message.content }}</li>
+      </ul>
+      <form id="messageForm" name="messageForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <div class="input-group clearfix">
+            <input type="text" id="message" name="newMessage" placeholder="Type a message..." autocomplete="off" class="form-control" [(ngModel)]="newMessage"/>
+            <button type="submit" class="primary">Send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,20 @@
+.user-list-container {
+  text-align: center;
+}
+
+.list-title {
+  font-size: 1.5rem;
+  margin: 16px 0px;
+}
+
+.user-list {
+  display: flex;
+  justify-content: left; /* Add space between the cards */
+  flex-wrap: wrap;
+}
+
+app-app-user-card {
+  display: inline-block;
+  width: calc(30% - 16px); /* Adjust the percentage based on your design */
+  margin: 8px; /* Adjust the spacing between cards */
+}

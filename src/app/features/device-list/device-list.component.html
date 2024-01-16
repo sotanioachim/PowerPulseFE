@@ -1,0 +1,16 @@
+<!-- device-list.component.html -->
+
+<div class="device-list-container">
+  <h2 class="list-title">Manage your devices:</h2>
+  <div class="device-list">
+    <app-device-card *ngFor="let device of devices" [device]="device" (editDevice)="openDeviceEditDialog($event)" (deleteDevice)="deleteDevice($event)"></app-device-card>
+  </div>
+  <div class="button-container">
+    <button mat-raised-button color="primary" class="add-device-button" (click)="openDeviceCreateDialog()">
+      <div class="add-content">
+        <mat-icon>add</mat-icon>
+        <label>Add Device</label> 
+      </div>
+    </button>
+  </div>
+</div>
